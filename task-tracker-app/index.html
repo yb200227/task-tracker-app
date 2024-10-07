@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Tracker</h1>
+        </header>
+
+
+        <form id="taskForm" class="form-section">
+            <div class="form-group">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" placeholder="Enter Task Name:">
+            </div>
+
+
+            <div class="form-group">
+                <label for="taskDescription">Description:</label>
+                <textarea id="taskDescription" name="taskDescription" placeholder="Enter Task Description:"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="taskDeadline">Task Deadline:</label>
+                <input type="date" id="taskDeadline" name="taskDeadline">
+            </div>
+
+
+            <button type="submit" class="btn-primary">Add Task:</button>
+        </form>
+
+
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th>Complete</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+      
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
